@@ -36,11 +36,11 @@ function Basket(props) {
         redirectPage();
       }
       else {
-        alert("Error Occured while checkout the books")
+        alert("Error occurred while checkout the books")
       }
     } catch (e) {
       console.log(e)
-      alert("Error Occured while checkout the books")
+      alert("Error occurred while checkout the books")
     }
 
   }

@@ -51,11 +51,11 @@ function OrderInfor(props) {
           );
         }
       } else {
-        alert("Error Occured while handle the order");
+        alert("Error occurred while handle the order");
       }
     } catch (error) {
       console.log(error);
-      alert("Error Occured while handle the order");
+      alert("Error occurred while handle the order");
     }
   };
 
@@ -81,10 +81,10 @@ function OrderInfor(props) {
         new_orders[index].status = "Processed";
         setOrders(new_orders);
       } else {
-        alert("Error Occured while handle the order");
+        alert("Error occurred while handle the order");
       }
     } catch (error) {
-      alert("Error Occured while handle the order");
+      alert("Error occurred while handle the order");
     }
   };
 

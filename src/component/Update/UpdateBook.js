@@ -60,11 +60,11 @@ function UpdateBook() {
           redirectPage();
         }
         else {
-          alert("Error Occured while update the book")
+          alert("Error occurred while update the book")
         }
       }
       catch {
-        alert("Error Occured while update the book")
+        alert("Error occurred while update the book")
       }
     }
     else {
@@ -85,12 +85,12 @@ function UpdateBook() {
         redirectPage();
       }
       else {
-        alert("Error Occured while delete the book")
+        alert("Error occurred while delete the book")
       }
     }
     catch (e) {
       console.log(e)
-      alert("Error Occured while delete the book")
+      alert("Error occurred while delete the book")
     }
   }
 
