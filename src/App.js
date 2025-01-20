@@ -24,7 +24,7 @@ class App extends Component {
       countItems: 0,
       itemInCard: [],
       isNavbarHidden: false,
-      isAdmin: false,
+      isAdmin: true,
     };
   }
 
@@ -60,7 +60,7 @@ class App extends Component {
   };
 
   clearCart = () => {
-    this.setState({itemInCard: []})
+    this.setState({ itemInCard: [] })
   }
 
   getUpdateBook = (updateBook) => {
@@ -92,9 +92,9 @@ class App extends Component {
               element={<Mainpage onAdd={this.onAdd} />}
             ></Route>
             <Route path="/upload" element={<UploadBook />}></Route>
-            <Route path="/update" element={this.state.isAdmin ? <UpdateBook /> : null }></Route>
+            <Route path="/update" element={this.state.isAdmin ? <UpdateBook /> : null}></Route>
             <Route path="/admin" element={this.state.isAdmin ? <Admin /> : null}></Route>
-            <Route path="/detail/:name" element={<BookDetail onAdd={this.onAdd}/>}></Route>
+            <Route path="/detail/:name" element={<BookDetail onAdd={this.onAdd} />}></Route>
             <Route
               path="/cart"
               element={

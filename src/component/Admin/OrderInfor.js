@@ -26,11 +26,10 @@ function OrderInfor(props) {
     try {
       const response = await axios({
         method: "delete",
-        url: `${config.APP_API_URL}/books/order`,
-        data: {
+        url: `/books/order`,
+        data: JSON.stringify({
           receiptHandle: orders[index].receiptHandle,
-        },
-        headers: { "Content-Type": "application/json" },
+        }),
       });
 
       const status = response.status;
@@ -52,11 +51,11 @@ function OrderInfor(props) {
           );
         }
       } else {
-        alert("Error Occured while handle the order");
+        alert("Error occurred while handle the order");
       }
     } catch (error) {
       console.log(error);
-      alert("Error Occured while handle the order");
+      alert("Error occurred while handle the order");
     }
   };
 
@@ -66,13 +65,12 @@ function OrderInfor(props) {
       const response = await axios({
         method: "post",
         url: `${config.APP_API_URL}/books/order/handle`,
-        data: {
+        data: JSON.stringify({
           id: uuid(),
           receiptHandle: orders[index].receiptHandle,
           books: orders[index].books,
           price: orders[index].price,
-        },
-        headers: { "Content-Type": "application/json" },
+        }),
       });
 
       const status = response.status;
@@ -83,17 +81,17 @@ function OrderInfor(props) {
         new_orders[index].status = "Processed";
         setOrders(new_orders);
       } else {
-        alert("Error Occured while handle the order");
+        alert("Error occurred while handle the order");
       }
     } catch (error) {
-      alert("Error Occured while handle the order");
+      alert("Error occurred while handle the order");
     }
   };
 
   var elements = orders.map((order, index) => {
     //console.log(order)
     return (
-      <tr key = {order.id}>
+      <tr key={order.id}>
         <td>{index + 1}</td>
         <td>
           {order.books.map((book) => (
