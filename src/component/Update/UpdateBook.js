@@ -76,7 +76,7 @@ function UpdateBook() {
     try {
       const response = await axios({
         method: 'delete',
-        url: `/books/${id}`,
+        url: `${config.APP_API_URL}/books/${id}`,
       });
 
       const status = response.status
