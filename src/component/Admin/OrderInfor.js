@@ -26,7 +26,7 @@ function OrderInfor(props) {
     try {
       const response = await axios({
         method: "delete",
-        url: `/books/order`,
+        url: `${config.APP_API_URL}/books/order`,
         data: JSON.stringify({
           receiptHandle: orders[index].receiptHandle,
         }),

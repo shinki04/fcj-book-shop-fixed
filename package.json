@@ -2,7 +2,6 @@
   "name": "fcj-serverless-",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://pb8clzque2.execute-api.us-east-1.amazonaws.com/staging",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
