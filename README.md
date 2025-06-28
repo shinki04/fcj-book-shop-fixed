@@ -1,70 +1,61 @@
-## Getting Started with Create React App
+# FCJ Book Shop Lab (Fixed Node.js Dependency Version)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Đây là phiên bản đã được sửa lỗi liên quan đến version của các dependency Node.js trong dự án **FCJ Book Shop Lab**.
 
-## Available Scripts
+---
+## Cấu hình ban đầu
 
-In the project directory, you can run:
+Trước khi chạy ứng dụng, bạn cần tạo file cấu hình:
+
+1. Truy cập vào thư mục `src/`
+2. Tạo một file mới tên là `config.js` dựa trên file mẫu `config-ex.js`
+3. Cập nhật các giá trị cấu hình trong `config.js` theo nhu cầu của bạn.
+
+---
+##  Khởi chạy ứng dụng
+
+Project này được khởi tạo bằng [Create React App](https://github.com/facebook/create-react-app).
+
+Trong thư mục project, bạn có thể chạy:
+
+### `npm install`
+
+Cài đặt các dependencies cần thiết.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Chạy ứng dụng ở chế độ development.  
+Mở [http://localhost:3000](http://localhost:3000) để xem trên trình duyệt.  
+Trang sẽ tự động reload khi bạn chỉnh sửa mã nguồn.  
+Bạn cũng sẽ thấy lỗi lint nếu có trong console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Chạy các test ở chế độ interactive.  
+Xem thêm tại [Running Tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build project cho môi trường production.  
+Các file được build sẽ nằm trong thư mục `build/` và được tối ưu hóa để có hiệu suất tốt nhất.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Ghi chú
 
-### `npm run eject`
+- Hãy chắc chắn rằng bạn đang dùng đúng phiên bản Node.js được chỉ định trong file `.nvmrc` (nếu có), hoặc theo yêu cầu của các dependency.
+- Nếu gặp lỗi khi `npm install`, thử xóa `node_modules` và `package-lock.json` rồi cài lại.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##  Cấu trúc chính
+```
+FCJ-Book-Shop-Lab/
+├── src/
+│ ├── config-ex.js # File cấu hình mẫu
+│ ├── config.js # File bạn cần tạo
+│ └── ... # Các thành phần React khác
+├── public/
+├── package.json
+└── README.md
+```
+##  Liên hệ
+Mọi thắc mắc hoặc đóng góp vui lòng tạo issue hoặc liên hệ với nhóm phát triển.

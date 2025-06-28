@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import Badge from "@material-ui/core/Badge";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
 
 function Navigation(props) {
     const [itemCount, setItemCount] = React.useState(0);
